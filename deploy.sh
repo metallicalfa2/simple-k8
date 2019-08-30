@@ -11,6 +11,7 @@ docker push metallicalfa/multi-server:$SHA
 docker push metallicalfa/multi-worker:$SHA
 
 kubectl apply -f k8s
+echo "----------- kubectl apply completed --------------"
 kubectl set image deployments/server-deployment server=metallicalfa/multi-server:$SHA
 kubectl set image deployments/client-deployment client=metallicalfa/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=metallicalfa/multi-worker:$SHA
