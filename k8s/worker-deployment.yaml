@@ -13,7 +13,7 @@ spec:
         component: worker
     spec:
       containers:
-      - name: worker-deployment
+      - name: worker
         image: stephengrider/multi-worker
         resources:
           limits:
