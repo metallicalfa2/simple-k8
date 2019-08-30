@@ -6,6 +6,7 @@ class Fib extends Component {
     seenIndexes: [],
     values: {},
     index: ''
+    
   };
 
   componentDidMount() {

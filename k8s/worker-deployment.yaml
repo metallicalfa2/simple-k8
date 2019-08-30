@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: worker
-        image: stephengrider/multi-worker
+        image: metallicalfa/multi-worker
         resources:
           limits:
             memory: "64Mi"
